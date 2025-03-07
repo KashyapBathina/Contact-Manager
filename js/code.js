@@ -71,6 +71,11 @@ function doRegistration(){
         
         // Reset result message
         document.getElementById("registrationResult").innerHTML = "";
+
+	if (password!==confirmation){
+                alert("Passwords must match");
+                return;
+        }
 	
 	let tmp = {
                 first: first,
